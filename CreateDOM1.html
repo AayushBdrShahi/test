@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style =" background-color: #212121; color:#fff;">
+<script>
+
+    //Create a Element 
+    const div = document.createElement('div')
+    console.log(div)
+
+
+    // Storing or adding data into the memory
+    div.className  ="main"
+    div.id = Math.floor(Math.random()*10 +1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding ="12px"
+    //div.innerHTML = "Aayush shahi"
+
+    ///// Addding elements or data into the page
+    const addText = document.createTextNode("Aayush ")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    div.style.borderRadius = "25px"
+
+
+    const newText = document.createTextNode("Shahi")
+    div.appendChild(newText)
+
+    document.body.appendChild(div)
+
+console.log(div)
+
+
+</script>    
+</body>
+</html>
+
+

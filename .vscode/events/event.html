@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color:#414141; color:aqua ">
+
+    <h2> Amaxing images</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" id="photoshop" src="https://images.pexels.com/photos/978695/pexels-photo-978695.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="photoshop">
+            </li>
+            <li>
+                <img width="200px" id="japan" src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="japan">
+            </li>
+            <li>
+                <img width="200px" id="river" src="https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="river">
+            </li>
+            <li>
+                <img width="200px" id="owl" src="https://images.pexels.com/photos/50713/football-ball-sport-soccer-50713.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="owl">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+//document.getElementById('owl').onclick =function(){
+  //  alert("Soccer boy")
+//}
+
+//document.getElementById('owl').addEventListener('click', function(e){
+//console.log("Click inside the ul");
+//},false)
+//document.getElementById('japan').addEventListener('click', function(e){
+ //   console.log("Second picture");
+ //   },false)
+//document.getElementById('river').addEventListener('click',function(e){
+   /// e.preventDefault()
+   // console.log("google clicked");
+//})
+// type, timestamp, defaultPrevented
+// target, toElement, srcElement, currentTarget
+//clientX, clientY m screenX, screenY,
+//altkey, ctrlkey, shiftKey, keyCode
+
+
+document.querySelector('#images').addEventListener('click',function(e){
+console.log(e.target.tagName)
+if(e.target.tagName === 'IMG '){
+    console.log(e.target.id);
+let removeIt =e.target.parentNode;
+removeIt.remove();
+}
+//removeIt.parentNode.removeChild(removeIt)
+})
+</script>
+</html>
